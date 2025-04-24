@@ -1,0 +1,13 @@
+name: Simple CI
+
+on: [push]
+
+jobs:
+  test-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Run shell test
+        run: ./shell_test.sh
+
